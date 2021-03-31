@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  padding: 50px;
+  background: rgb(16, 58, 75);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.degree span {
+  margin: 5px;
+}
+
+.degree {
+  position: relative;
+}
+
+.location {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+#icon {
+  margin-top: 20px;
+}
+
+.locationTimezone {
+  margin-bottom: 20px;
+}
+
+.description {
+  margin: 15px auto 40px auto;
+  font-size: 25px;
+}
+
+.borderFrame {
+  height: 465px;
+  width: 285px;
+  padding: 50px 50px 20px 50px;
+  border: 5px solid white;
+  border-radius: 50px;
+  box-shadow: 15px 10px black;
+  background: rgb(105, 117, 121);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.locationTimezone {
+  margin-bottom: 20px;
+}
+
+#updateTime {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  text-shadow: none;
+  text-align: center;
+}
+
+#refresh {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+#refresh:hover {
+  transition: all 0.2s linear;
+  transform: rotateZ(40deg);
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font-size: 80px;
+}
+
+#unit {
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  right: -30%;
+  transform: translate(30%, 0);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+  #title {
+    font-size: 3rem;
+  }
+  #note {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-height: 600px) {
+  body {
+    padding: none;
+  }
+  #title {
+    font-size: 1rem;
+  }
+  #note {
+    font-size: 0.5rem;
+  }
+  h3 {
+    font-size: 12px;
+  }
+}
+
+.move {
+  animation: moveimg 4s linear infinite alternate;
+}
+
+@keyframes moveimg {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}

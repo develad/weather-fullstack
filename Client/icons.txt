@@ -1,0 +1,12 @@
+
+Name	Abbreviation	Icon
+Snow	sn	Snow
+Sleet	sl	Sleet
+Hail	h	Hail
+Thunderstorm	t	Thunderstorm
+Heavy Rain	hr	Heavy Rain
+Light Rain	lr	Light Rain
+Showers	s	Showers
+Heavy Cloud	hc	Heavy Cloud
+Light Cloud	lc	Light Cloud
+Clear	c	Clear
